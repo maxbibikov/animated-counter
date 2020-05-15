@@ -1,0 +1,109 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffdcb4;
+  color: #6a097d;
+  width: 100%;
+  height: 100vh;
+}
+
+.top-bar {
+  display: flex;
+  height: 10%;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.icon_header {
+  width: 4em;
+}
+
+.icon_currency {
+  width: 1em;
+  margin-right: 0.5em;
+}
+
+.rates-container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+@media only screen and (min-width: 900px) {
+  .rates-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.currency {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.currency__title {
+  display: flex;
+}
+
+.currency__value {
+  text-align: center;
+  width: 4em;
+  text-decoration-color: black;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1em;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+.primary-btn {
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
+  background-color: #6a097d;
+  color: #ffdcb4;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.primary-btn:hover {
+  background-color: #722481;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10%;
+  background-color: #6a097d;
+  color: #ffdcb4;
+  width: 100%;
+}
